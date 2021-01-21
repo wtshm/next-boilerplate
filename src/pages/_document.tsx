@@ -1,12 +1,14 @@
 import React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 
 const url = '';
 const title = '';
 const description = '';
 
 class MyDocument extends Document {
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang="ja-JP">
         <Head>
