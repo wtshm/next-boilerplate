@@ -1,9 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-
-const url = '';
-const title = '';
-const description = '';
+import { siteDescription, siteTitle, siteUrl } from 'shared/consts';
 
 class MyDocument extends Document {
   render(): JSX.Element {
@@ -11,13 +8,13 @@ class MyDocument extends Document {
       <Html lang="ja-JP">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="description" content={description} />
+          <meta name="description" content={siteDescription} />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content={title} />
-          <meta property="og:url" content={url} />
-          <meta property="og:description" content={description} />
-          <meta property="og:site_name" content={title} />
-          <meta property="og:image" content={`${url}/og_image.png`} />
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:url" content={siteUrl} />
+          <meta property="og:description" content={siteDescription} />
+          <meta property="og:site_name" content={siteTitle} />
+          <meta property="og:image" content={`${siteUrl}/og_image.png`} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="format-detection" content="telephone=no" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
