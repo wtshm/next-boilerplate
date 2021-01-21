@@ -12,14 +12,11 @@ const Home: NextPage = () => (
 
     <main className={styles.main}>
       <h1 className={styles.title}>
-        Welcome to
-        {' '}
-        <a href="https://nextjs.org">Next.js!</a>
+        Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
 
       <p className={styles.description}>
-        Get started by editing
-        {' '}
+        Get started by editing{' '}
         <code className={styles.code}>pages/index.js</code>
       </p>
 
@@ -47,9 +44,7 @@ const Home: NextPage = () => (
           className={styles.card}
         >
           <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
+          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
     </main>
@@ -60,8 +55,7 @@ const Home: NextPage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by
-        {' '}
+        Powered by{' '}
         <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
       </a>
     </footer>
