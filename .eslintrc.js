@@ -12,36 +12,38 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react",
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: [
-    "@typescript-eslint",
-    "import",
-    "jsx-a11y",
-    "react",
-    "react-hooks"
-  ],
+  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'react', 'react-hooks'],
   root: true,
   rules: {
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-    ],
+    '@typescript-eslint/no-use-before-define': ['error'],
     'lines-between-class-members': [
       'error',
       'always',
       {
         exceptAfterSingleLine: true,
+      },
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
     'react/jsx-filename-extension': [
@@ -62,8 +64,8 @@ module.exports = {
   },
   overrides: [
     {
-      'files': ['*.tsx'],
-      'rules': {
+      files: ['*.tsx'],
+      rules: {
         'react/prop-types': 'off',
       },
     },
